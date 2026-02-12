@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import TodoDetailPage from "./Pages/TodoDetailPage";
+import ErrorTestPage from "./pages/ErrorTestPage";
 import NotFoundPage from "./Pages/NotFoundPage";
 import ErrorBoundary from "./components/ErrorBoundary";
 
@@ -11,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/todos/:id" element={<TodoDetailPage />} />
+          <Route path="/error-test" element={<ErrorTestPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>

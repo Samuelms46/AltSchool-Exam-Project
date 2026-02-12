@@ -41,6 +41,37 @@
   margin: 0 auto 1rem;
 }
 
+.create-todo-btn {
+  margin-top: 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.create-todo-btn:hover {
+  background: var(--primary-hover);
+}
+
+.clear-filters-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-filters-btn:hover {
+  background: var(--primary-hover);
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);

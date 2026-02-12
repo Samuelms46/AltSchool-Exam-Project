@@ -1,0 +1,131 @@
+.todo-detail-page {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.todo-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+  transition: opacity 0.2s;
+}
+
+.back-button:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.todo-detail-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+}
+
+.todo-detail-header {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--primary-hover)
+  );
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.todo-detail-header h1 {
+  font-size: 1.75rem;
+  margin: 0;
+  flex: 1;
+}
+
+.status-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.status-badge.complete {
+  background: var(--success-color);
+}
+
+.status-badge.incomplete {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.todo-detail-content {
+  padding: 2rem;
+}
+
+.detail-section {
+  margin-bottom: 2rem;
+}
+
+.detail-section:last-child {
+  margin-bottom: 0;
+}
+
+.detail-section h2 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.detail-section p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.detail-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.detail-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  padding: 0.75rem;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+}
+
+.detail-item dt {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.detail-item dd {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .todo-detail-header {
+    flex-direction: column;
+  }
+
+  .status-badge {
+    align-self: flex-start;
+  }
+
+  .detail-item {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+}

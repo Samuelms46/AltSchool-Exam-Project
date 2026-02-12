@@ -53,20 +53,52 @@
   margin-top: 0.25rem;
 }
 
-.view-details-btn {
-  background: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  white-space: nowrap;
-  transition: background 0.2s;
+.todo-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-shrink: 0;
 }
 
-.view-details-btn:hover {
+.btn-view,
+.btn-edit,
+.btn-delete-small {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-view {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-view:hover {
   background: var(--primary-hover);
   text-decoration: none;
+}
+
+.btn-edit {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-edit:hover {
+  background: var(--border-color);
+}
+
+.btn-delete-small {
+  background: var(--error-color);
+  color: white;
+}
+
+.btn-delete-small:hover {
+  background: #dc2626;
 }
 
 @media (max-width: 640px) {
@@ -75,8 +107,15 @@
     align-items: flex-start;
   }
 
-  .view-details-btn {
-    align-self: stretch;
+  .todo-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .btn-view,
+  .btn-edit,
+  .btn-delete-small {
+    flex: 1;
     text-align: center;
   }
 }

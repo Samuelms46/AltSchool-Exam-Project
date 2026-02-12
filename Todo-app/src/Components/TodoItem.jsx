@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../styles/TodoItem.css";
 
-function TodoItem({ todo }) {
+function TodoItem({ todo, onEdit, onDelete }) {
   return (
     <article className="todo-item">
       <div className="todo-content">
@@ -18,13 +18,30 @@ function TodoItem({ todo }) {
           )}
         </div>
       </div>
-      <Link
-        to={`/todos/${todo.id}`}
-        className="view-details-btn"
-        aria-label={`View details of ${todo.title}`}
-      >
-        View Details
-      </Link>
+
+      <div className="todo-actions">
+        <Link
+          to={`/todos/${todo.id}`}
+          className="btn-view"
+          aria-label={`View details of ${todo.title}`}
+        >
+          View
+        </Link>
+        <button
+          onClick={() => onEdit(todo)}
+          className="btn-edit"
+          aria-label={`Edit ${todo.title}`}
+        >
+          Edit
+        </button>
+        <button
+          onClick={() => onDelete(todo)}
+          className="btn-delete-small"
+          aria-label={`Delete ${todo.title}`}
+        >
+          Delete
+        </button>
+      </div>
     </article>
   );
 }
