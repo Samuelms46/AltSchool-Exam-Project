@@ -1,4 +1,4 @@
-import "../styles/SearchFilter.css";
+import "../Styles/SearchFilter.css";
 
 function SearchFilter({
   searchTerm,

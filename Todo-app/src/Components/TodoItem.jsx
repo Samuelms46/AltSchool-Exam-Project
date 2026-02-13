@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../styles/TodoItem.css";
+import "../Styles/TodoItem.css";
 
 function TodoItem({ todo, onEdit, onDelete }) {
   return (
