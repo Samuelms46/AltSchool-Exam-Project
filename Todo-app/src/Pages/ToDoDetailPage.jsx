@@ -1,7 +1,7 @@
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { todosApi } from "../services/api";
-import "../styles/TodoDetail.css";
+import "../Styles/TodoDetail.css";
 
 function TodoDetailPage() {
   const { id } = useParams();
