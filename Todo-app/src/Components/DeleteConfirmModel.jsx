@@ -1,4 +1,4 @@
-import "../styles/DeleteConfirmModel.css";
+import "../Styles/DeleteConfirmModel.css";
 
 function DeleteConfirmModal({ isOpen, onClose, onConfirm, todoTitle }) {
   if (!isOpen) return null;
