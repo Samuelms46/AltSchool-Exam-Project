@@ -6,7 +6,7 @@ import Pagination from "./Pagination";
 import SearchFilter from "./SearchFilter";
 import TodoModal from "./TodoModel";
 import DeleteConfirmModal from "./DeleteConfirmModel";
-import "../styles/TodoList.css";
+import "../Styles/TodoList.css";
 
 function TodoList() {
   const [currentPage, setCurrentPage] = useState(1);
