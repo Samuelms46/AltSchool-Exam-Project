@@ -3,7 +3,7 @@ import HomePage from "./Pages/HomePage";
 import TodoDetailPage from "./Pages/ToDoDetailPage";
 import ErrorTestPage from "./Pages/ErrorTestPage";
 import NotFoundPage from "./Pages/NotFoundPage";
-import ErrorBoundary from "./components/ErrorBoundary";
+import ErrorBoundary from "./Components/ErrorBoundary";
 
 function App() {
   return (
