@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../styles/TodoModel.css";
+import "../Styles/TodoModel.css";
 
 function TodoModal({ isOpen, onClose, onSubmit, todo, mode = "create" }) {
   const [formData, setFormData] = useState({
