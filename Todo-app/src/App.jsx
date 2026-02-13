@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
-import TodoDetailPage from "./Pages/TodoDetailPage";
-import ErrorTestPage from "./pages/ErrorTestPage";
+import TodoDetailPage from "./Pages/ToDoDetailPage";
+import ErrorTestPage from "./Pages/ErrorTestPage";
 import NotFoundPage from "./Pages/NotFoundPage";
 import ErrorBoundary from "./components/ErrorBoundary";
 
